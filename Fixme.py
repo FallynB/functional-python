@@ -5,10 +5,12 @@ Your solutions should use the map and filter functions,
 and not for loops or list comprehensions.
 '''
 
+
 def evens(n):
 
     return list(filter(lambda x: x % 2 == 0, range(0, n + 1)))
-'''
+
+    '''
     Returns a list of even numbers from 0 to n inclusive.
 
     >>> evens(10)
@@ -28,7 +30,7 @@ def threes(n):
 
     return list(filter(lambda x: '3' in x, range(0, n + 1)))
     '''
-    Returns a list of all numbers from 0 to n inclusive that contain the digit 3.
+    Returns a list of all numbers from 0 to n that contain the digit 3.
 
     >>> threes(2)
     []
@@ -47,7 +49,7 @@ def small_words(text):
 
     return list(filter(lambda x: len(x) < 5, text.split()))
     '''
-    Returns a list of all words in the input text that are less than 5 characters long.
+    Returns a list of the input text that are less than 5 characters long.
 
     HINT:
     Recall that text.split() converts the text variable into a list of words.
@@ -85,7 +87,8 @@ def lengths(strings):
 
     return list(map(lambda x: len(x), strings))
     '''
-    Given a list of strings, returns a list of the lengths of the corresponding strings.
+    Given a list of strings, returns a list
+    of the lengths of the corresponding strings.
 
     >>> lengths([])
     []
