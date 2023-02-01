@@ -6,6 +6,7 @@ and not for loops or list comprehensions.
 '''
 
 def evens(n):
+
     return list(filter(lambda x: x % 2 == 0, range(0, n + 1)))
 '''
     Returns a list of even numbers from 0 to n inclusive.
@@ -24,6 +25,7 @@ def evens(n):
 
 
 def threes(n):
+
     return list(filter(lambda x: '3' in x, range(0, n + 1)))
     '''
     Returns a list of all numbers from 0 to n inclusive that contain the digit 3.
@@ -42,6 +44,7 @@ def threes(n):
 
 
 def small_words(text):
+
     return list(filter(lambda x: len(x) < 5, text.split()))
     '''
     Returns a list of all words in the input text that are less than 5 characters long.
@@ -61,6 +64,7 @@ def small_words(text):
 
 
 def squares(n):
+
     return list(map(lambda x: x**2, range(1, n + 1)))
     '''
     Returns a list of all square number between 1 and n inclusive.
@@ -78,6 +82,7 @@ def squares(n):
 
 
 def lengths(strings):
+
     return list(map(lambda x: len(x), strings))
     '''
     Given a list of strings, returns a list of the lengths of the corresponding strings.
